@@ -1,0 +1,14 @@
+#!/bin/bash
+read -p 'Enter A vaild Username: ' username
+
+if [ "$LOGNAME"="$user" ] 
+  then 
+    printf "%s is logged in" $LOGNAME 
+top -U $username
+else 
+
+printf "%s is not logged in" $LOGNAME 
+  fi 
+
+
+
